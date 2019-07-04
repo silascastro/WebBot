@@ -11,7 +11,7 @@ browser.get('https://www.amazon.com.br/ap/signin?openid.pape.max_auth_age=0&open
 #searchBar = browser.find_element_by_id('q')
 #searchBar.send_keys('Donwload')
 
-#aqui, manipalamos e interagimos com o dom do site
+#aqui, manipulamos e interagimos com o dom do site
 
 email = browser.find_element_by_id('ap_email')
 email.send_keys('email')
@@ -28,10 +28,11 @@ login = browser.find_element_by_id('signInSubmit')
 login.click()
 
 
-#dentro da página inicial faz pesquisas
+#mandando dados para a searchbar 
 searchBar = browser.find_element_by_id('twotabsearchtextbox')
 searchBar.send_keys('macbook pro 15')
 
+#clicando no boto de pesquisa
 submit = browser.find_element_by_class_name('nav-input')
 submit.click()
 
